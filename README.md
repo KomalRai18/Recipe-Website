@@ -1,2 +1,2 @@
 # Recipe-Website
-Recipe Project
+This is the Recipe Website Project.
