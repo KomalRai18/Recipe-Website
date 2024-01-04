@@ -1,22 +1,78 @@
-# Recipe-Website - SRS
-This is the Recipe Website Project.
-Introduction:
-My software project is about “Recipe sharing platform” which requires multiple functionalities and user-specifications including search engine, recipes form for user-submission, login form, sign-up form, and admin dashboard.
+SOFTWARE REQUIREMENT SPECIFICATION
 
-Functional & Non-functional Requirements:
-1.	The functionalities required me to design a search engine in which the user will enter a string which will be matched with the ingredients list and recipe’s title hence the optimized results will be fetched accordingly from databases. To solve the problem, I declared a component and designed an input area to enable the user enter the string and search for the recipe. According to my program, If the entered string doesn’t match any data from the API, “Not Found” will be printed on screen otherwise the cards of the best solutions will be displayed on screen.
-2.	When the user will click on “Sign up” button, it will navigate to sign up form where the users will enter the details and all the user-submitted records will be saved in the “Sign up” database.
-3.	When the user click “Logout” form, it will be logged out of the website and redirected to “Login” Form.
-4.	When the user click “Login” button, the user entered details will be matched with the records in database and the user will be logged in.
-5.	When the user clicks on any “Recipe link” in the header, It will be redirected to recipe page in which all the recipes saved in our databases will be displayed on our recipe page. Upon clicking a particular recipe tab, the full recipe detail of that recipe will be displayed.
-6.	In the admin dashboard, all the details of the users, recipes are displayed
-7.	In the recipes page in the dashboard, the admin can view all the records of the recipes saved in the database. Not only that, the admin can also add new recipes in the database directly from admin dashboard and also delete the recipe records.
-8.	In the Users page in dashboard, the admin can view details of all the details who have registered on the website.
-9.	There is also a page on the website where the admin can view all the user’s written commnets.
-Problem Statement & Problem Solution:
-The problem I faced during the development is that upon entering the keyword in the search bar on the index page, It was difficult to display the results on the same index on which the user has search for a recipe due to the styling issues. To resolve the issue, I designed another page named “Search page” to displayed all the records from the database. To enhance the user experience, I also created another search bar on the same page.
-Another difficulty I faced was taking the file input from user on the “Add recipe” Page. To resolve the issue, I used conditional statements (If-else) display the error if the system faces any issues to add the reciepes and asking to perform the action again.
+                                              Introduction
 
-Constraints:
-The constraints of this website is that the we cannot take the review or feedback of this website from user. The user can only rate the recipes on the website and not the website itself.
+•	Purpose: 
+    The purpose of this documentation is to elaborate on the functional requirements and features of an online platform “Food Recipe.” The purpose behind developing such a website was to build an interactive online where the users can not only access the recipes but also share their recipes.
 
+•	Scope: 
+    The “Food Recipe” website is a responsive website developed with the help of cutting-edge technologies like PHP, MySql, Bootstrap, and Javascript. The website will cater to the registered users, administrators, and guest visitors as well as facilitate an interactive interface, easy browsing, and flexibility in sharing and accessing the recipes.
+
+•	Overview:
+    The “Food Recipe” platform enables the users to register for the website and view the detailed recipes, give feedback, rate the recipes, and also search for the recipes. The users can also see the featured recipes and star recipes on the website. Not only that, they can add their recipes on the website to make it visible to other users. With user-friendly features for guests, registered users, and administrators, it provides a fresh experience for recipe sharing. On the admin side, it allows the administrator to track the number of visitors visiting the website, store and manage user details, and add and delete new recipes.
+
+•	Problem Statement:
+    Currently, the majority of the websites across the internet only let the users view, share, and rate the recipes but none provide a platform to share their own customized recipes. Also, not many websites display which recipes are most viewed and best rated.
+
+•	Problem Solution: 
+    To resolve the above statement problem, I have created a website that not only enables the users to public their recipes but also displays the highest-rated recipes.
+
+
+                                              Overall Description
+
+•	Product Perspective: 
+  This is a standalone website where users can browse the recipes and view the detailed descriptions of each of them along with sharing their recipes. For administrators, it lets them add or delete any recipe, store and view the user details, and keep track of visitors visiting the website.
+
+•	User Classes and Characteristics:
+  1. Users who have registered on the website can seamlessly browse the website to navigate and view the detailed recipes, rate them, and share comments. Besides that, they can add their own customized recipes and do the keywords searching for the recipes by the ingredient or recipe name.
+  2. Administrators: Administrators can view the number of visitors who visit the website and view the detailed analytics on their dashboard. Furthermore, they can add new recipes directly from their dashboard into the database or delete any recipe records from the database. Also, they can view and manage the registered user's details on their dashboard.
+     
+•	Operating Environment: 
+    The website will be accessible through popular web browsers (Chrome, Firefox, Safari) on desktop and mobile devices.	
+
+
+                                            Functional Requirements
+
+•	User Registration and Login:
+    Users can register for the website using the sign-up form and log in using the credentials with which they registered for the website.
+    
+•	User-submitted Recipe:
+    The users can post their recipes on our website by filling in the necessary details.
+    
+•	Recipe Details:
+    The user can view the recipe details like the ingredients, instructions, and recipe name along with its picture. 
+    
+•	Rating and Comments:
+    The users can comment on each recipe individually and rate the recipes.
+    
+•	Keyword Searching:
+    The users can search for recipes by either entering the recipes’ titles or ingredients name and the best-optimized results will be fetched and displayed for users’ view.
+  
+  
+                                          Non-functional Requirements
+
+•	Performance:
+    The website should run effectively without crashing even with more traffic
+•	Security:
+    The website should be secure when it comes to user data security like login credentials.
+•	Usability:
+    The website should be easy to browse and offer a good user interface for navigation.
+•	Compatibility:
+    Compatibility across different browsers and devices (desktops, tablets, and mobile phones).
+
+
+
+                                          Technical Requirements
+                                          
+  •	Technology used:
+    PHP
+    Javascript
+    Html & CSS
+    MySQL
+  •	Database design:
+    Structured the database tables named ‘recipes’, ‘user-details’, ‘comments’, and ‘admin-dir’ to store the user details, recipe details, user comments and ratings, and admin’s details as well.
+    
+    
+	                                            Conclusion
+                                             
+	  This Software Requirements Specification outlines the key functionalities, user classes, technical requirements, and performance expectations of the website “Food Recipe.”
